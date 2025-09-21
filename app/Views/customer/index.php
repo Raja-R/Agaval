@@ -1,0 +1,41 @@
+
+<?php 
+  $ds = DIRECTORY_SEPARATOR;
+  $base_dir = realpath(dirname(__FILE__) . $ds . '..') . $ds;
+?>
+
+<?php include("{$base_dir}{$ds}common/header.php"); ?>
+<link rel="stylesheet" href="<?php echo base_url(); ?>/public/assets/vendor/libs/select2/select2.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>/public/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+
+<body>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <?php include("{$base_dir}{$ds}common/sidebar.php"); ?>
+
+      <!-- Layout container -->
+      <div class="layout-page">
+        <?php include("{$base_dir}{$ds}common/navbar.php"); ?>
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <?php
+            if ($segment == "") {
+                include 'list.php';
+            } elseif ($segment == "add") {
+                include 'customer_add.php';
+            } elseif ($segment == "update") {
+                include 'customer_add.php';
+            } elseif ($segment == "view") {
+                include 'view.php';
+            } else {
+                include 'list.php';
+            }
+            ?>          
+          
+          <!-- / Content -->
+
+          <?php include("{$base_dir}{$ds}common/footer.php"); ?>
+
