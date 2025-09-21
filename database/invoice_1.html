@@ -1,0 +1,449 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>My Webcrumbs Plugin</title><style>@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+
+*,
+:after,
+:before {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+  --tw-contain-style: ;
+}
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+  --tw-contain-style: ;
+} /*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+:after,
+:before {
+  --tw-content: "";
+}
+:host,
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family:
+    Open Sans,
+    ui-sans-serif,
+    system-ui,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol,
+    Noto Color Emoji;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  line-height: inherit;
+  margin: 0;
+}
+hr {
+  border-top-width: 1px;
+  color: inherit;
+  height: 0;
+}
+abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    Liberation Mono,
+    Courier New,
+    monospace;
+  font-feature-settings: normal;
+  font-size: 1em;
+  font-variation-settings: normal;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+table {
+  border-collapse: collapse;
+  border-color: inherit;
+  text-indent: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-size: 100%;
+  font-variation-settings: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+input:where([type="button"]),
+input:where([type="reset"]),
+input:where([type="submit"]) {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+:-moz-focusring {
+  outline: auto;
+}
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+progress {
+  vertical-align: baseline;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+summary {
+  display: list-item;
+}
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+fieldset {
+  margin: 0;
+}
+fieldset,
+legend {
+  padding: 0;
+}
+menu,
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+dialog {
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+[role="button"],
+button {
+  cursor: pointer;
+}
+:disabled {
+  cursor: default;
+}
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+  vertical-align: middle;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+#webcrumbs .col-span-1 {
+  grid-column: span 1 / span 1;
+}
+#webcrumbs .col-span-10 {
+  grid-column: span 10 / span 10;
+}
+#webcrumbs .col-span-12 {
+  grid-column: span 12 / span 12;
+}
+#webcrumbs .col-span-2 {
+  grid-column: span 2 / span 2;
+}
+#webcrumbs .col-span-3 {
+  grid-column: span 3 / span 3;
+}
+#webcrumbs .col-span-6 {
+  grid-column: span 6 / span 6;
+}
+#webcrumbs .col-span-8 {
+  grid-column: span 8 / span 8;
+}
+#webcrumbs .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+#webcrumbs .mb-2 {
+  margin-bottom: 8px;
+}
+#webcrumbs .mt-1 {
+  margin-top: 4px;
+}
+#webcrumbs .mt-12 {
+  margin-top: 48px;
+}
+#webcrumbs .mt-2 {
+  margin-top: 8px;
+}
+#webcrumbs .flex {
+  display: flex;
+}
+#webcrumbs .grid {
+  display: grid;
+}
+#webcrumbs .w-full {
+  width: 100%;
+}
+#webcrumbs .max-w-4xl {
+  max-width: 56rem;
+}
+#webcrumbs .grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+#webcrumbs .flex-row {
+  flex-direction: row;
+}
+#webcrumbs .items-center {
+  align-items: center;
+}
+#webcrumbs .justify-between {
+  justify-content: space-between;
+}
+#webcrumbs .gap-4 {
+  gap: 16px;
+}
+#webcrumbs .border {
+  border-width: 1px;
+}
+#webcrumbs .border-b {
+  border-bottom-width: 1px;
+}
+#webcrumbs .border-r {
+  border-right-width: 1px;
+}
+#webcrumbs .border-t {
+  border-top-width: 1px;
+}
+#webcrumbs .border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+}
+#webcrumbs .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+#webcrumbs .p-1 {
+  padding: 4px;
+}
+#webcrumbs .p-4 {
+  padding: 16px;
+}
+#webcrumbs .pr-1 {
+  padding-right: 4px;
+}
+#webcrumbs .text-center {
+  text-align: center;
+}
+#webcrumbs .text-right {
+  text-align: right;
+}
+#webcrumbs .text-\[8px\] {
+  font-size: 8px;
+}
+#webcrumbs .text-sm {
+  font-size: 14px;
+  line-height: 21px;
+}
+#webcrumbs .text-xs {
+  font-size: 12px;
+  line-height: 19.200000000000003px;
+}
+#webcrumbs .font-bold {
+  font-weight: 700;
+}
+#webcrumbs .font-medium {
+  font-weight: 500;
+}
+#webcrumbs {
+  font-family: Open Sans !important;
+  font-size: 16px !important;
+}
+</style><link rel="manifest" href="/manifest.json"><link rel="icon" href="https://cdn.webcrumbs.org/assets/images/landing/favicon.ico" /><link rel="apple-touch-icon" sizes="192x192" href="https://cdn.webcrumbs.org/assets/images/landing/logo192.png" /><link rel="apple-touch-icon" sizes="512x512" href="https://cdn.webcrumbs.org/assets/images/landing/logo512.png" /><meta name="theme-color" content="#ffffff"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Webcrumbs"></head><body><div id="webcrumbs"><div class="w-full max-w-4xl mx-auto p-4 bg-white"> <div class="flex justify-between mb-2 text-sm font-medium"> <div class="text-center">Tax Invoice</div> <div class="text-center">(ORIGINAL FOR RECIPIENT)</div> </div> <div class="border border-black"> <div class="grid grid-cols-12"> <div class="col-span-6 border-r border-b border-black p-1 text-xs"> <div class="font-bold">HI FORCE ENTERPRISES</div> <div>DOOR NO 1/90 SOUTH STREET</div> <div>PUTHAKARAM PAZLUR,MAYILADUTHURAI</div> <div>TAMIL NADU,609203</div> <div>PHONE : 9445077325</div> <div>GSTIN/UIN : 33AAPFH8277A1Z7</div> <div>State Name : Tamil Nadu,Code : 33</div> <div>E-MAIL : support@hiforce.com</div> </div> <div class="col-span-3 border-r border-b border-black p-1 text-xs"> <div class="font-bold">Invoice No</div> <div>HFE/008/23-24</div> <div class="font-bold mt-1">Delivery Note</div> <div class="font-bold mt-1">Reference no. &amp; Date</div> <div class="font-bold mt-1">Buyer Order No.</div> <div class="font-bold mt-1">Dispatch doc No</div> <div class="font-bold mt-1">Dispatched through</div> <div class="font-bold mt-1">Vessel/Flight No</div> <div class="font-bold mt-1">S/Port of Loading</div> </div> <div class="col-span-3 border-b border-black p-1 text-xs"> <div class="font-bold">Date</div> <div>30-July-23</div> <div class="font-bold mt-1">Mode/terms of Payment</div> <div class="font-bold mt-1">Other Reference</div> <div class="font-bold mt-1">Date</div> <div class="font-bold mt-1">Delivery Note Date</div> <div class="font-bold mt-1">Destination</div> <div class="font-bold mt-1">place of receipt by shipper</div> <div class="font-bold mt-1">S/Port of Discharge</div> </div> </div> <div class="grid grid-cols-12"> <div class="col-span-6 border-r border-b border-black p-1 text-xs"> <div class="font-bold">Buyer</div> <div class="font-bold">WEWIN FINISHING EQUIPMENTS PVT LTD</div> <div>KADALUR, 609203</div> <div>TAMIL NADU</div> <div>GSTIN/UIN : 33AAACW7094D1ZD</div> <div>State Name : Tamil Nadu,Code : 33</div> </div> <div class="col-span-6 border-b border-black p-1 text-xs"> <div class="font-bold">Terms of Delivery</div> </div> </div> <div class="grid grid-cols-12"> <div class="col-span-6 border-r border-b border-black p-1 text-xs"> <div class="font-bold">Ship to</div> <div class="font-bold">WEWIN FINISHING EQUIPMENTS PVT LTD</div> <div>KADALUR, 609203</div> <div>TAMIL NADU</div> <div>GSTIN/UIN : 33AAACW7094D1ZD</div> <div>State Name : Tamil Nadu,Code : 33</div> </div> </div> <div class="grid grid-cols-12 text-xs border-b border-black"> <div class="col-span-1 border-r border-black p-1 font-bold text-center">Sl No</div> <div class="col-span-3 border-r border-black p-1 font-bold text-center">Description to Goods</div> <div class="col-span-2 border-r border-black p-1 font-bold text-center">HSN/SAC</div> <div class="col-span-1 border-r border-black p-1 font-bold text-center">GST Rate</div> <div class="col-span-1 border-r border-black p-1 font-bold text-center">Quantity</div> <div class="col-span-1 border-r border-black p-1 font-bold text-center">Rate</div> <div class="col-span-1 border-r border-black p-1 font-bold text-center">Per</div> <div class="col-span-2 p-1 font-bold text-center">Amount</div> </div> <div class="grid grid-cols-12 text-xs"> <div class="col-span-1 border-r border-black p-1 text-center">1</div> <div class="col-span-3 border-r border-black p-1"> <div class="font-bold">SERVICE CHARGES</div> <div class="mt-2"> Inspection / Supervision / Erection and <br/>Commission of PT Plant including: M E P <br/>With your tools and tackles. </div> </div> <div class="col-span-2 border-r border-black p-1 text-center">9954</div> <div class="col-span-1 border-r border-black p-1 text-center">18%</div> <div class="col-span-1 border-r border-black p-1 text-center">1</div> <div class="col-span-1 border-r border-black p-1 text-right">38,003.00</div> <div class="col-span-1 border-r border-black p-1 text-center">nos</div> <div class="col-span-2 p-1 text-right">38,003.00</div> </div> <div class="grid grid-cols-12 text-xs border-t border-black"> <div class="col-span-10"></div> <div class="col-span-2 text-right p-1 border-t border-black">38,003.00</div> </div> <div class="grid grid-cols-12 text-xs"> <div class="col-span-2"></div> <div class="col-span-8 text-right pr-1 font-bold">CGST 9%</div> <div class="col-span-2 text-right p-1">3,420.27</div> </div> <div class="grid grid-cols-12 text-xs"> <div class="col-span-2"></div> <div class="col-span-8 text-right pr-1 font-bold">SGST 9%</div> <div class="col-span-2 text-right p-1">3,420.27</div> </div> <div class="grid grid-cols-12 text-xs"> <div class="col-span-2"></div> <div class="col-span-8 text-right pr-1 font-bold">Rounded off</div> <div class="col-span-2 text-right p-1">0.46</div> </div> <div class="grid grid-cols-12 text-xs border-t border-black"> <div class="col-span-2"></div> <div class="col-span-8 text-right pr-1 font-bold">TOTAL</div> <div class="col-span-2 text-right p-1 font-bold">44,844.00</div> </div> <div class="grid grid-cols-12 text-xs border-t border-black p-1"> <div class="col-span-12 font-bold">Amount chargeable (in word)</div> <div class="col-span-12 font-bold">INR Forty Four Thousand Eight Hundred Forty Four Rupees And Zero Paisa Only</div> </div> <div class="grid grid-cols-12 text-xs border-t border-black"> <div class="col-span-2 border-r border-black p-1 text-center font-bold">HSN/SAC</div> <div class="col-span-2 border-r border-black p-1 text-center font-bold">Taxable Value</div> <div class="col-span-3 border-r border-black text-center font-bold">Central Tax</div> <div class="col-span-3 border-r border-black text-center font-bold">State Tax</div> <div class="col-span-2 text-center font-bold">Total Tax Amount</div> </div> <div class="grid grid-cols-12 text-xs"> <div class="col-span-2 border-r border-black"></div> <div class="col-span-2 border-r border-black"></div> <div class="col-span-1 border-r border-black p-1 text-center font-bold">Rate</div> <div class="col-span-2 border-r border-black p-1 text-center font-bold">Amount</div> <div class="col-span-1 border-r border-black p-1 text-center font-bold">Rate</div> <div class="col-span-2 border-r border-black p-1 text-center font-bold">Amount</div> <div class="col-span-2"></div> </div> <div class="grid grid-cols-12 text-xs"> <div class="col-span-2 border-r border-black p-1 text-center">9954</div> <div class="col-span-2 border-r border-black p-1 text-right">38,003.00</div> <div class="col-span-1 border-r border-black p-1 text-center">9%</div> <div class="col-span-2 border-r border-black p-1 text-right">3420.27</div> <div class="col-span-1 border-r border-black p-1 text-center">9%</div> <div class="col-span-2 border-r border-black p-1 text-right">3,420.27</div> <div class="col-span-2 p-1 text-right">6840.54</div> </div> <div class="grid grid-cols-12 text-xs border-t border-black"> <div class="col-span-2 border-r border-black p-1 text-center font-bold">Total</div> <div class="col-span-2 border-r border-black p-1 text-right">38,003.00</div> <div class="col-span-1 border-r border-black"></div> <div class="col-span-2 border-r border-black p-1 text-right">3420.27</div> <div class="col-span-1 border-r border-black"></div> <div class="col-span-2 border-r border-black p-1 text-right">3,420.27</div> <div class="col-span-2 p-1 text-right">6840.54</div> </div> <div class="grid grid-cols-12 text-xs border-t border-black p-1"> <div class="col-span-12 font-bold">Tax Amount (in word)</div> <div class="col-span-12 font-bold">INR Six Thousand Eight Hundred Forty Rupees And Fifty Four Paisa Only</div> </div> <div class="grid grid-cols-12 text-xs border-t border-black"> <div class="col-span-6 border-r border-black p-1"> <div class="font-bold">Company&#x27;s Bank Details</div> <div class="grid grid-cols-12"> <div class="col-span-6 font-bold">A/C Holder&#x27;s Name</div> <div class="col-span-6">: HI FORCE ENTERPRISES</div> </div> <div class="grid grid-cols-12"> <div class="col-span-6 font-bold">Bank Name</div> <div class="col-span-6">: KVB-1232135000007052</div> </div> <div class="grid grid-cols-12"> <div class="col-span-6 font-bold">A/C No</div> <div class="col-span-6">: 1232135000007052</div> </div> <div class="grid grid-cols-12"> <div class="col-span-6 font-bold">Branch &amp; IFS code</div> <div class="col-span-6">: MAYILADUTHURAI &amp; KVBL0001232</div> </div> </div> <div class="col-span-6 p-1"> <div class="text-center">for HI-FORCE ENTERPRISES</div> <div class="mt-12 text-center">Authorised Signatory</div> </div> </div> <div class="grid grid-cols-12 text-xs border-t border-black p-1"> <div class="col-span-12 font-bold"> <div>Declaration</div> <div>We declare that Invoice shows the actual price of the goods described and that all particulars are true and correct</div> </div> </div> <div class="grid grid-cols-12 text-xs border-t border-black p-1 text-center"> <div class="col-span-12 text-[8px]">This is a Computer Generated Invoice</div> </div> </div> </div></div> </body></html>
